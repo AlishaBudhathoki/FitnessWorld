@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness World</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        .login-btn {
+            background-color: #f00;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #c00;
+        }
+
+        /* Centered section */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; /* Set a fixed height or adjust as needed */
+            background-color: #009385;
+        }
+
+        /* Optional: Add padding and margin to the section */
+        section {
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="/" class="text-2xl font-bold">Home</a>
+        <!-- <a href="/" class="text-2xl font-bold>Fitness World</a> -->
+        <a href="/login" class="login-btn">Login</a>
+    </div>
+</header>
+
+<section>
+    <h2>Fee Calculator</h2>
+    <div class="nav-links">
+        <a href="/fee_calculator">Calculate your Package</a>
+    </div>
+</section>
+
+</body>
+</html>

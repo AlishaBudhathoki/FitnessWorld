@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Members - Fitness World</title>
+</head>
+<body>
+    <header>
+        <!-- Include header component -->
+        {% include 'header.html' %}
+    </header>
+    <main>
+        <h1>Members</h1>
+        <ul>
+            {% for member in members %}
+                <li>{{ member.name }} - {{ member.email }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Fitness World</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('/static/images/dashboard.png'); background-size: cover; background-position: center;" class="bg-gray-100 flex items-center justify-center h-screen" background-repeat="no-repeat"></body>
+
+    <main class="container mx-auto py-8 flex flex-col items-center">
+        <div class="w-full max-w-lg box-border border border-gray-300 p-4">
+            <h1 class="text-3xl font-bold mb-4 bg-white">Dashboard</h1>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="mb-4">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+            <h2 class="text-xl font-bold mb-4 text-white">Add New Member</h2>
+            <a href="/member_details" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Add New Member
+            </a>
+        </div>
+    </main>
+</body>
+</html>
+z
